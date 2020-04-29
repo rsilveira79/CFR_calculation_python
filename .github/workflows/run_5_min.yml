@@ -6,8 +6,7 @@ name: CI
 # events but only for the master branch
 on:
   schedule:
-   # - cron: '0 */4 * * *'
-   - cron: '*/5 * * * *'
+   - cron: '0 */12 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
