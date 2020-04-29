@@ -19,15 +19,8 @@ jobs:
         python-version: 3.6
     - name: install dependencies
       run: |
-        sudo apt-get update -y
-        sudo apt-get -y --force-yes install chromium-chromedriver
-        npm install -g electron@6.1.4 orca
-        pip3 install pandas numpy ipykernel jupyter scipy tqdm statsmodels
-        python3 -m ipykernel install --user --name python3
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
         sudo chmod -R 777 .
-    - name: Run Notebook
-      uses: yaananth/run-notebook@v1
-      with:
-        notebook: "notebooks/1.initial_assessment.ipynb"
-        isReport: False
-        poll: True
+    - name: Run Script
+      run: python main_script.py
