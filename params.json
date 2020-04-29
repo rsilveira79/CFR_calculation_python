@@ -1,0 +1,11 @@
+{
+"cCFRBaseline":             1.4,
+"cCFREstimateRange_low":    1.2,
+"cCFREstimateRange_high":   1.7,
+"zmeanLow":                 8.7,
+"zmedianLow":               6.7,
+"zmeanMid":                 13,
+"zmedianMid":               9.1,
+"zmeanHigh":                20.9,
+"zmedianHigh":              13.7
+}
